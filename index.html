@@ -97,7 +97,9 @@
         <p>Join our pioneer program and receive <span class="bold">$40 in NutriVend credit for just $20</span>!</p>
         <p>This offer is available only to the first 100 students who sign up.</p>
 
-        <form name="early-adopters" method="POST" data-netlify="true">
+        <!-- Netlify form setup -->
+        <form name="early-adopters" method="POST" data-netlify="true" action="thank-you.html">
+          <input type="hidden" name="form-name" value="early-adopters" />
           <input type="email" name="email" placeholder="Enter your email" required />
           <button type="submit">GET YOUR $40 CREDIT NOW</button>
         </form>
